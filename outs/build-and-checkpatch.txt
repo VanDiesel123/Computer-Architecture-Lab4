@@ -1,0 +1,24 @@
+total: 0 errors, 0 warnings, 76 lines checked
+
+/workspace/labs/lab4/src/hello.c has no obvious style problems and is ready for submission.
+make: Entering directory '/workspace/labs/lab4/src'
+make -C /home/student/bbb-lab/repos/linux-stable M=/workspace/labs/lab4/src clean
+  CLEAN   /workspace/labs/lab4/src/.tmp_versions
+make: Leaving directory '/workspace/labs/lab4/src'
+make: Entering directory '/workspace/labs/lab4/src'
+make -C /home/student/bbb-lab/repos/linux-stable M=/workspace/labs/lab4/src modules
+  CC [M]  /workspace/labs/lab4/src/hello.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /workspace/labs/lab4/src/hello.mod.o
+  LD [M]  /workspace/labs/lab4/src/hello.ko
+make: Leaving directory '/workspace/labs/lab4/src'
+/workspace/labs/lab4/src/hello.ko: ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), BuildID[sha1]=46bce11d8f2274146ae4aa637cc2179882ccba07, not stripped
+filename:       /workspace/labs/lab4/src/hello.ko
+license:        Dual BSD/GPL
+description:    Hello module with parameters, timestamps and a kernel list
+author:         Student
+depends:        
+name:           hello
+vermagic:       4.19.325 SMP mod_unload ARMv7 p2v8 
+parm:           count:Number of times to print Hello, world! (uint)
